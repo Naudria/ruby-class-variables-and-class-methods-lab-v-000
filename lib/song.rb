@@ -1,6 +1,6 @@
 class Song
   attr_accessor :name, :artists, :genre
-  
+
   @@count = 0
   @@genres = []
   @@artists = []
@@ -28,7 +28,7 @@ class Song
 
   def self.artist_count
     @@artists.each do |artist|
-      @@artist_count[artist] = @@artist.count(genre)
+      @@artist_count[artist] = @@artists.count(genre)
   end
   @@genre_count
 end
